@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const flname = "Harsh Jaiswal";
 ReactDOM.render(
   <>
-  <h1>Harsh Jaiswal Netflix</h1>
-  <p>Top 5 Netflix series</p>
-  <ol>
-    <li>Bracking Bad</li>
-    <li>Money Heist</li>
-    <li>Dark</li>
-    <li>you</li>
-    <li>Stranger Things</li>
-  </ol>
+    <h1> My name is {flname} </h1>
+    <p> My lucky no. is {7+3} </p>
   </>,
   document.getElementById("root")
-
 );
