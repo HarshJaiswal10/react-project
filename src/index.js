@@ -5,6 +5,26 @@ import ReactDOM from 'react-dom';
 
 // ReactDOM.render('kya dikhana hai','kaha dikhana hai','callback func'); 
 ReactDOM.render(
-    <h1> Hello World!! </h1>, 
+  // <div>
+  //   <h1> Harsh Jaiswal!! </h1>
+  //   <p>Learning react.js </p>
+  //   </div> ,
+    // ---------------- 
+  // [
+  //   <h1> Harsh Jaiswal!! </h1>,
+  //   <p>Learning react.js </p>
+  // ] ,  
+
+  // <React.Fragment>
+  //    <h1> Harsh Jaiswal!! </h1>
+  //    <p>Learning react.js </p>
+  //    </React.Fragment> , 
+
+  // we also use react fragment as <>
+  <>
+     <h1> Harsh Jaiswal!! </h1>
+     <p>Learning react.js </p>
+     </> , 
+
     document.getElementById("root")
 ); 
