@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+ 
+const fname = 'Harsha';
+const lname = 'Jaiswal';
 
-const flname = "Harsh Jaiswal";
 ReactDOM.render(
-  <>
-    <h1> My name is {flname} </h1>
-    <p> My lucky no. is {7+3} </p>
-  </>,
+  <h1>{`My name is ${fname} ${lname}`}</h1>,
   document.getElementById("root")
-);
+  );
