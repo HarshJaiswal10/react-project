@@ -1,22 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'
+import reactDom from 'react-dom';
+import './index.css';
 
-const name = "Harsh jaiswal";
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/300/300";
-const img3 = "https://picsum.photos/400/300";
-const link = "https://www.google.co.in/";
-ReactDOM.render(
+let curDate = new Date(2020, 6, 6, 7);
+curDate = curDate.getHours();
+let greeting ='';
+const cssStyle ={};
+
+if(curDate>= 6 && curDate <12){
+  greeting = 'Good Morning';
+  cssStyle.color = 'blue';
+} else if(curDate>=12 && curDate <19){
+  greeting = 'Good Afternoon';
+  cssStyle.color = 'orange';
+}else{
+  greeting = 'Good Night';
+  cssStyle.color = 'black';
+}
+
+reactDom.render(
   <>
-      <h1 className="heading">My name is {name}</h1>
-      <div className="img_div">
-          <img src = {img1} alt="randomImages" />
-          <img src = {img2} alt="randomImages" />
-          <a href = {link} target="_harsh" >
-           <img src = {img3} alt="randomImages" />
-          </a>
-      </div>
+  <div>
+  <h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1>,
+  </div>
   </>,
   document.getElementById("root")
 );
