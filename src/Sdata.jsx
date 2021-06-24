@@ -33,6 +33,13 @@ const Sdata = [
         title:"A Netflix Original Series",
         sname:"The Witcher",
         link:"https://www.netflix.com/in/title/80189685"
+    },
+    {
+        id: 6,
+        imgsrc:"https://m.media-amazon.com/images/M/MV5BZTFhMDdmODEtN2UwOS00ZjQwLTgxMGYtM2JlMGM3YTUyM2FjXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_UY1200_CR95,0,630,1200_AL_.jpg",
+        title:"A Amazon Original Series",
+        sname:"The Marvelous Mrs. Maisel",
+        link:"https://www.primevideo.com/detail/The-Marvelous-Mrs-Maisel/0SKQT5MHXXQ50OZ9FXYRFVEQM7"
     }
 ];
 
