@@ -1,24 +1,26 @@
 import React from 'react'
-import Amazon from './Amazon';
-import Netflix from './Netflix';
+import SlotM from './SlotMach';
 
-const favSeries = 'netflix';
 
-// const FavS = () => {
-// if (favSeries == 'netflix') {
-//     return <Netflix />;
-// } else {
-//     return <Amazon />;
-// }
-// }
-
-const App = () => (
+const App = () => {
+  return(
   <>
-
-    <h1 className="heading_style"> List of top 5 Netflix series</h1>
-    {/* <FavS /> */}
-    { favSeries == 'netflix' ? <Netflix /> : <Amazon />}
+    <h1 className="heading_style">
+      🎰 Welcome to {" "} 
+      <span style= {{ fontWeight: 'bold'}}> Slot machine </span> 🎰 </h1>
+    
+    <div className="slotmachine">
+      <SlotM x='😄' y='😄' z='😄'/>
+       <hr />
+      <SlotM x='😄' y='😆' z='😄' />
+      <hr />
+      <SlotM x='🍎' y='🍏' z='🍎' />
+      <hr />
+      <SlotM x='👦' y='👦' z='👦' />
+    </div>
+    
   </>
 );
+};
 
 export default App;
