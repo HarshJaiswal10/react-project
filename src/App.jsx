@@ -20,36 +20,42 @@ const App = () => {
     const {value, name} = event.target;
 
     setFullName((preValue) => {
-      // console.log(preValue); 
-      if(name === 'fname'){
-       return{
-          fname : value,
-          lname : preValue.lname,
-          email : preValue.email,
-          phone : preValue.phone,
-       };
-      } else if(name === 'lname'){
-        return{
-           fname : preValue.fname,
-           lname : value,
-           email : preValue.email,
-           phone : preValue.phone,
-        };
-       } else if(name === 'email'){
-        return{
-           fname : preValue.fname,
-           lname : preValue.lname,
-           email : value,
-           phone : preValue.phone,
-        };
-       } else if(name === 'phone'){
-        return{
-           fname : preValue.fname,
-           lname : preValue.lname,
-           email : preValue.email,
-           phone : value,
-        };
-       }
+      console.log(preValue); 
+
+      return{
+        ...preValue,
+        [name] : value,
+      }
+
+      // if(name === 'fname'){
+      //  return{
+      //     fname : value,
+      //     lname : preValue.lname,
+      //     email : preValue.email,
+      //     phone : preValue.phone,
+      //  };
+      // } else if(name === 'lname'){
+      //   return{
+      //      fname : preValue.fname,
+      //      lname : value,
+      //      email : preValue.email,
+      //      phone : preValue.phone,
+      //   };
+      //  } else if(name === 'email'){
+      //   return{
+      //      fname : preValue.fname,
+      //      lname : preValue.lname,
+      //      email : value,
+      //      phone : preValue.phone,
+      //   };
+      //  } else if(name === 'phone'){
+      //   return{
+      //      fname : preValue.fname,
+      //      lname : preValue.lname,
+      //      email : preValue.email,
+      //      phone : value,
+      //   };
+      //  }
     });
   };
   const onSubmit = (event) => {
@@ -75,7 +81,7 @@ const App = () => {
       <input 
         type='text' 
         placeholder='Enter Your Last Name' 
-        name="lname"
+        name="lname" 
         onChange={InputEvent} 
         value={fullName.lname} 
       />
